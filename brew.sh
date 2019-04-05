@@ -137,31 +137,31 @@ brew install heroku/brew/heroku
 heroku update
 
 # Core casks
-# brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-# brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
-# brew cask install --appdir="/Applications" virtualbox
-# brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
-# brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
-# brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
-# brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" tunnelblick
+brew cask install --appdir="/Applications" cyberduck
+brew cask install --appdir="/Applications" meld
+brew cask install --appdir="/Applications" sequel-pro
+brew cask install --appdir="/Applications" pycharm
+brew cask install --appdir="/Applications" sourcetree
+brew cask install --appdir="/Applications" microsoft-office
+brew cask install --appdir="/Applications" balsamiq-mockups
+brew cask install --appdir="/Applications" simplediagrams
+brew cask install --appdir="/Applications" anaconda
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+
 
 # Install Docker, which requires virtualbox
 brew install docker
