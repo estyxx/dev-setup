@@ -159,7 +159,6 @@ brew cask install --appdir="/Applications" sourcetree
 brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" balsamiq-mockups
 brew cask install --appdir="/Applications" simplediagrams
-brew cask install --appdir="/Applications" anaconda
 
 
 

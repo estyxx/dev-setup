@@ -9,13 +9,8 @@ sudo -K
 echo "------------------------------"
 echo "Setting up anaconda."
 
+brew cask install --appdir="/Applications" anaconda
 
-# Get the last version for OSX
-wget https://repo.anaconda.com/archive/
-latest=$(cat index.html | grep -Ern "Anaconda3.*MacOSX.*sh" | head -1 | sed  's/^.*href="\(.*\)".*/\1/p' | head -1)
-
-# Install anaconda
-wget https://repo.anaconda.com/archive/$latest -O ~/anaconda.sh
 bash ~/anaconda.sh -b -p $HOME/anaconda
 export PATH="$HOME/anaconda/bin:$PATH"
 
