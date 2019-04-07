@@ -63,6 +63,14 @@ function runDots() {
             echo ""
             ./pydata.sh
         fi
+        if [ $ARG == "anaconda" ] || [ $ARG == "all" ]; then
+            # Run the pydata.sh Script
+            echo "------------------------------"
+            echo "Setting up Anaconda"
+            echo "------------------------------"
+            echo ""
+            ./anaconda.sh
+        fi
         if [ $ARG == "aws" ] || [ $ARG == "all" ]; then
             # Run the aws.sh Script
             echo "------------------------------"
