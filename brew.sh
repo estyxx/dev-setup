@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -43,7 +43,7 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -62,11 +62,11 @@ LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+brew install vim 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install homebrew/php/php55	
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -97,7 +97,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
+#brew install homebrew/x11/xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -109,7 +109,7 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install hub
-brew install imagemagick --with-webp
+brew install imagemagick 
 brew install lua
 brew install lynx
 brew install p7zip
