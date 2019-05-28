@@ -23,13 +23,3 @@ POWERLEVEL9K_ANACONDA_RIGHT_DELIMITER=")"
 export PYTHONSTARTUP=$HOME/.pyrc
 export PATH=$HOME/.bin:$PATH
 
-
-DEFAULT_ENV="env3"
-if [ -f " ~/anaconda/etc/profile.d/conda.sh" ]; then
-    . "~/anaconda/etc/profile.d/conda.sh"
-    #echo "conda activate dt-env?"
-    CONDA_CHANGEPS1=false conda activate $DEFAULT_ENV
-else
-    "echo export?"
-    \export PATH="~/anaconda/bin:$PATH"
-fi
