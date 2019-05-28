@@ -62,11 +62,11 @@ LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim 
+brew install vim
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55	
+brew install homebrew/php/php55
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -97,6 +97,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
+brew install bash-git-prompt
 #brew install homebrew/x11/xpdf
 brew install xz
 
@@ -109,7 +110,7 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install hub
-brew install imagemagick 
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -137,19 +138,20 @@ heroku update
 
 # Core casks
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" xquartz
+#brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" webstorm
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
+#brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" tunnelblick
+#brew cask install --appdir="/Applications" tunnelblick
 brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" meld
 brew cask install --appdir="/Applications" sequel-pro
@@ -157,17 +159,16 @@ brew cask install --appdir="/Applications" pycharm
 brew cask install --appdir="/Applications" sourcetree
 brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" balsamiq-mockups
-brew cask install --appdir="/Applications" simplediagrams
+#brew cask install --appdir="/Applications" simplediagrams
 brew cask install --appdir="/Applications" telegram-desktop
-
-
+brew cask install --appdir="/Applications" eqmac
 
 # Install Docker, which requires virtualbox
 brew install docker
 brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # Remove outdated versions from the cellar.
 brew cleanup
