@@ -55,6 +55,15 @@ function runDots() {
             echo ""
             ./osx.sh
         fi
+        if [ $ARG == "zsh" ] || [ $ARG == "all" ]; then
+            # Run the zsh.sh Script
+            echo ""
+            echo "------------------------------"
+            echo "Setting up Zsh shell."
+            echo "------------------------------"
+            echo ""
+            ./zsh.sh
+        fi
         if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
             # Run the pydata.sh Script
             echo "------------------------------"
